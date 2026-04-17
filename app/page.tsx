@@ -43,7 +43,7 @@ export default function Home() {
 
         <div style={styles.card}>
           <h3>🎓 Pensato per studenti</h3>
-          <p>Creato per semplificare lo studio quotidiano.</p>
+          <p>Creato per semplificare lo studio.</p>
         </div>
       </section>
 
