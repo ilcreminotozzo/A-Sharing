@@ -14,7 +14,7 @@ export default function Login() {
     });
 
     if (error) alert(error.message);
-    else alert("Login OK");
+    else alert("Login effettuato");
   }
 
   async function register() {
@@ -24,7 +24,7 @@ export default function Login() {
     });
 
     if (error) alert(error.message);
-    else alert("Account creato!");
+    else alert("Account creato");
   }
 
   return (
@@ -33,20 +33,22 @@ export default function Login() {
 
       <input
         placeholder="email"
+        value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
       <br /><br />
 
       <input
-        type="password"
         placeholder="password"
+        type="password"
+        value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
 
       <br /><br />
 
-      <button onClick={login}>Login</button>
+      <button onClick={login}>Accedi</button>
       <button onClick={register}>Registrati</button>
     </div>
   );
